@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapbox DCPS Map</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+        #container {
+            display: flex;
+            width: 100%;
+        }
+        #sidebar {
+            width: 30%;
+            padding: 15px;
+            background: #2c3e50;
+            color: #ecf0f1;
+            overflow-y: auto;
+            border-right: 2px solid #34495e;
+        }
+        #sidebar h3 {
+            margin: 10px 0;
+            font-size: 1.1em;
+            color: #ecf0f1;
+            border-bottom: 1px solid #34495e;
+            padding-bottom: 5px;
+        }
+        #map {
+            width: 70%;
+            height: 100vh;
+        }
+        #logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            height: auto;
+            z-index: 10;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #34495e;
+            padding: 8px;
+            text-align: left;
+            background-color: #34495e;
+            color: #ecf0f1;
+        }
+        tr:nth-child(even) {
+            background-color: #3b4a5a;
+        }
+        select, input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #34495e;
+            background-color: #34495e;
+            color: #ecf0f1;
+        }
+        select:hover, input[type="number"]:hover {
+            background-color: #3b4a5a;
+        }
+        select:focus, input[type="number"]:focus {
+            outline: none;
+            border-color: #1abc9c;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+            <img src="DCPS_logo.jpg" alt="DCPS Logo" style="width: 70%; height: auto; max-height: 90px; margin-bottom: 10px;">
+            <h2>DCPS Swing Space Planning Tool</h2>
+            <h3>Select a School</h3>
+            <select id="school-select"></select>
+            <h3>Set Drive Radius</h3>
+            <select id="radius-select">
+                <option value="1609">1 Mile</option>
+                <option value="3218">2 Miles</option>
+                <option value="4828">3 Miles</option>
+                <option value="5632" selected>3.5 Miles</option>
+                <option value="7242">4.5 Miles</option>
+            </select>
+            <h3>Target Enrollment Size</h3>
+<input type="number" id="target-enrollment" placeholder="Enter target size" style="width: 100%; margin: 5px 0; padding: 5px;">
+<h3>Building Type</h3>
+            <div class="radio-group">
+                <label><input type="radio" name="building-type" value="both" checked> Both</label>
+                <label><input type="radio" name="building-type" value="permanent"> Permanent</label>
+                <label><input type="radio" name="building-type" value="trailers"> Trailers</label>
+            </div>
+<h3>Swing Locations Inside Drive Radius</h3>
+            <table>
+                <thead>
+                    <tr><th>Name</th></tr>
+                </thead>
+                <tbody id="swing-table"></tbody>
+            </table>
+        </div>
+        <div id="map"></div>
+        <img id="logo" src="logo-Perkins-Eastman.png" alt="Perkins Eastman Logo">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

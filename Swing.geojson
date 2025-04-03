@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"name": "Swing",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Site": "Meyer (W1) ", "Address": "2501 11th St NW, Washington, DC 20001", "Latitude": 38.923063969679603, "Longitude": -77.026616989439503 }, "geometry": { "type": "Point", "coordinates": [ -77.026616989439503, 38.923063969679603 ] } },
+{ "type": "Feature", "properties": { "Site": "Old Banneker (W1) ", "Address": "800 Euclid St NW, Washington, DC 20001", "Latitude": 38.923776249451599, "Longitude": -77.023956702932097 }, "geometry": { "type": "Point", "coordinates": [ -77.023956702932097, 38.923776249451599 ] } },
+{ "type": "Feature", "properties": { "Site": "KC Lewis (W1) ", "Address": "300 Bryant St NW, Washington, DC 20001", "Latitude": 38.920460831420598, "Longitude": -77.016680012000705 }, "geometry": { "type": "Point", "coordinates": [ -77.016680012000705, 38.920460831420598 ] } },
+{ "type": "Feature", "properties": { "Site": "Sharpe Health (W4) ", "Address": "4300 13th St NW, Washington, DC 20011", "Latitude": 38.943570295056197, "Longitude": -77.030441316424103 }, "geometry": { "type": "Point", "coordinates": [ -77.030441316424103, 38.943570295056197 ] } },
+{ "type": "Feature", "properties": { "Site": "Trailers @ Takoma Rec Fields", "Address": "300 Van Buren St NW, Washington, DC 20012", "Latitude": 38.9689430778663, "Longitude": -77.018855616423295 }, "geometry": { "type": "Point", "coordinates": [ -77.018855616423295, 38.9689430778663 ] } },
+{ "type": "Feature", "properties": { "Site": "Burroughs Swing Site", "Address": "1924 M.L.K. Jr Blvd, Tulsa, OK 74106", "Latitude": 38.933424256330198, "Longitude": -76.978647788110706 }, "geometry": { "type": "Point", "coordinates": [ -76.978647788110706, 38.933424256330198 ] } },
+{ "type": "Feature", "properties": { "Site": "Trailers @ Upper Spingarn Field (W5) ", "Address": "820 26th St NE, Washington, DC 20002", "Latitude": 38.901230262856799, "Longitude": -76.971168716425495 }, "geometry": { "type": "Point", "coordinates": [ -76.971168716425495, 38.901230262856799 ] } },
+{ "type": "Feature", "properties": { "Site": "Davis (W7) ", "Address": "4430 H St SE, Washington, DC 20019", "Latitude": 38.879123708783503, "Longitude": -76.937390186482901 }, "geometry": { "type": "Point", "coordinates": [ -76.937390186482901, 38.879123708783503 ] } },
+{ "type": "Feature", "properties": { "Site": "Kenilworth (W7) ", "Address": "4321 Ord St NE, Washington, DC 20019", "Latitude": 38.908328399149099, "Longitude": -76.941444360604294 }, "geometry": { "type": "Point", "coordinates": [ -76.941444360604294, 38.908328399149099 ] } },
+{ "type": "Feature", "properties": { "Site": "Trailers @ Nalle Field (W7) ", "Address": "219 50th St SE, Washington, DC 20019", "Latitude": 38.886153948636199, "Longitude": -76.930979931769301 }, "geometry": { "type": "Point", "coordinates": [ -76.930979931769301, 38.886153948636199 ] } },
+{ "type": "Feature", "properties": { "Site": "DC Prep V Street SE (W8)", "Address": "1409 V St SE, Washington, DC 20020", "Latitude": 38.864861586023402, "Longitude": -76.984694660605797 }, "geometry": { "type": "Point", "coordinates": [ -76.984694660605797, 38.864861586023402 ] } },
+{ "type": "Feature", "properties": { "Site": "Hart MS (Internal swing W8) ", "Address": "601 Mississippi Ave SE, Washington, DC 20032", "Latitude": 38.837696281376402, "Longitude": -76.997239005328694 }, "geometry": { "type": "Point", "coordinates": [ -76.997239005328694, 38.837696281376402 ] } },
+{ "type": "Feature", "properties": { "Site": "Eagle Acadmey (W8)", "Address": "3400 Wheeler Rd SE, Washington, DC 20032", "Latitude": 38.840425718139997, "Longitude": -76.992757075949896 }, "geometry": { "type": "Point", "coordinates": [ -76.992757075949896, 38.840425718139997 ] } }
+]
+}
